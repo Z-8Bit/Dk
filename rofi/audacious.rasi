@@ -1,0 +1,71 @@
+configuration {
+	modi:					"drun";
+	display-drun: 			"Apps";
+	drun-display-format:    "{name}";
+	font:				    "JetBrainsMono Nerd Font 12";
+	show-icons:              false;
+	icon-theme: 			"Fluent-purple-dark";
+}
+
+@theme "/dev/null"
+
+* {
+	bg: #1a1e23;
+	fg:	#dadada;
+	accent:	#2f343d;
+    active:	#2f343d;
+	rad: 10px;
+	background-color: @bg;
+	text-color:	@fg;
+}
+
+window {
+	height: 97%;
+    width: 22%;
+	location: west;
+	x-offset: -0.5%;
+	y-offset: 2%;
+}
+
+inputbar {
+	children: [prompt];
+	margin: 20px;
+	border-radius: @rad;
+	expand: false;
+	background-color: @active;
+}
+
+prompt {
+    enabled: true;
+	expand: true;
+    padding: 20px 0px 30px 15px;
+	border-radius: @rad;
+    background-color: @active;
+}
+
+listview {
+	columns: 2;
+	lines: 8;
+	cycle: false;
+    margin: 20px;
+}
+
+element {
+	orientation: horizontal;
+	padding: 0.5em;
+}
+
+element-text, element-icon {
+	padding: 0.4em;
+	horizontal-align: 0;
+	background-color: inherit;
+}
+
+element-icon { size: 24px; }
+listview, element, element selected, element-text, element-icon { cursor: pointer; }
+
+element selected {
+	background-color: @active;
+	text-color: @fg;
+	border-radius: @rad;
+}

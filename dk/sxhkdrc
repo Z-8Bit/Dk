@@ -1,0 +1,102 @@
+### PERSONAL COMMANDS
+
+alt + {b, d, f, l, m, n, p, s, t, v}
+    {blueman-manager, discord, firefox-developer-edition, audacious, multimc, thunar, pavucontrol, spotify, transmission-gtk, vscodium}
+
+# launcher
+alt + r
+	rofi -show drun -auto-select
+
+# wifi menu
+alt + w
+	rofi-wifi-menu.sh
+
+# audacious control rofi
+alt + a
+	audacious.sh
+
+# powermenu
+alt + e
+	powermenu.sh
+
+# terminal
+super + Return
+	alacritty
+
+# nuke
+super + alt + x
+    xkill
+
+# dedicated volume keys
+{XF86AudioRaiseVolume,XF86AudioLowerVolume}
+	volume.sh {up,down}
+
+# dedicated backlight keys
+{XF86MonBrightnessUp,XF86MonBrightnessDown}
+	brightness.sh {up,down}
+
+# mute
+XF86AudioMute
+	volume.sh mute
+
+# clipboard fullscreen
+shift + Print
+	maim | xclip -selection clipboard -t image/png && notify-send "Screenshot Taken"
+	
+# clipboard cropped
+Print
+	maim --select | xclip -selection clipboard -t image/png && notify-send "Screenshot Clipped"
+	
+# reload sxhkd
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# shutdown system
+super + alt + q
+	sudo shutdown now && notify-send "Shutting Down System"
+
+# restart system
+super + alt + r
+	sudo reboot now && notify-send "Rebooting System"
+
+# reload dkrc
+super + shift + r
+	dkcmd reload
+
+# restart dk
+#super + shift + r
+	#dkcmd restart
+
+### DK COMMANDS
+
+# focus next or previous window
+alt + {j,k}
+	dkcmd win focus {next,prev}
+
+# close window, swap tiled window in/out of master, cycle tiled windows in place
+super + {q,space,Tab}
+	dkcmd win {kill,swap,cycle}
+
+# monocle and fake fullscreen (enable manipulating screen window)
+super {_,alt + }m
+	dkcmd win {full,fakefull}
+
+# toggle floating
+super + t
+	dkcmd win float
+
+# resize window, signed (+/-) for relative changes
+alt + ctrl + {h,j,k,l}
+	dkcmd win resize {w=-20,h=+20,h=-20,w=+20}
+
+# view, send, or follow to a workspace (by number)
+super + {_,shift + ,ctrl + }{1-9,0}
+	dkcmd ws {view,send,follow} {1-9,10}
+
+# change gap width
+alt + {equal,minus}
+	dkcmd set gap width {+5,-5}
+
+# change border widths
+alt + ctrl + {_,shift + }{equal,minus}
+	dkcmd set border {width,outer_width} {+1,-1}

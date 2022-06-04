@@ -1,0 +1,10 @@
+sudo /usr/bin/wall.sh
+#nitrogen --restore
+/usr/bin/dunst &
+picom &
+/usr/bin/nitrogen --set-zoom-fill --random Pictures/Wallpapers --save
+nm-applet &
+blueman-applet &
+touchegg &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+polybar &

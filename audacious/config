@@ -31,10 +31,10 @@ url_opener_win=768,472,384,173
 close_button_visible=FALSE
 column_widths=10,459,260,10,175,175,10,100,192,159,275,275,275,10,275
 entry_count_visible=TRUE
-player_height=508
-player_width=948
-player_x=962
-player_y=562
+player_height=1032
+player_width=1912
+player_x=-3836
+player_y=44
 playlist_columns=title artist album length path
 statusbar_visible=FALSE
 
@@ -46,7 +46,7 @@ item1_pos=-1,966,45,940,1021
 item2_name=Spectrum Analyzer
 item2_pos=-1,966,45,940,1021
 item3_name=Search Tool
-item3_pos=0,-1,-1,264,424
+item3_pos=0,-1,-1,264,948
 item_count=4
 
 [history]
@@ -57,7 +57,7 @@ player_height=1028
 player_width=1904
 
 [search-tool]
-path=/home/zishaan/Music/Wilbah
+path=/home/zishaan/Music/trinity
 
 [skins]
 equalizer_x=233

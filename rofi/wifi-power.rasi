@@ -15,9 +15,10 @@ configuration {
 	bg:				#1a1e23;
 	fg:				#dadada;
 	accent:			#22292b;
-    active:      	#32343d;
-	rad:			10px;
-
+    active:      	#2f343d;
+	rad:			2px;
+	purple: #7F63B7;
+	pink: #a066b1;
 	background-color: @bg;
 	text-color:	@fg;
 }
@@ -41,11 +42,11 @@ inputbar {
 prompt {
 	enabled: true;
     expand: false;
-    padding: 10px;
+    padding: 16px;
     vertical-align: 0.5;
     background-color: @accent;
-    text-color: @fg;
-    font: "JetBrainsMono Font 20";
+    text-color: @pink;
+    font: "JetBrainsMono Nerd Font 15";
 }
 
 entry{
@@ -54,6 +55,7 @@ entry{
     placeholder: "Search";
 	border-radius: @rad;
     background-color: @active;
+	text-color: @purple;
 }
 
 listview {

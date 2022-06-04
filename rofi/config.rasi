@@ -13,9 +13,11 @@ configuration {
 * {
 	bg: #1a1e23;
 	fg:	#cbcbcb;
-	accent:	#252b32;
+	accent:	#22292b;
     active:	#2f343d;
-	rad: 10px;
+	rad: 2px;
+	purple: #7F63B7;
+	pink: #a066b1;
 	background-color: @bg;
 	text-color:	@fg;
 }
@@ -42,7 +44,7 @@ prompt {
     padding: 10px;
     vertical-align: 0.5;
     background-color: @accent;
-    text-color: @fg;
+    text-color: @pink;
     font: "JetBrainsMono Font 22";
 }
 
@@ -52,6 +54,7 @@ entry{
     placeholder: "Search";
 	border-radius: @rad;
     background-color: @active;
+	text-color: @purple;
 }
 
 listview {

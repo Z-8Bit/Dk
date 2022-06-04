@@ -5,7 +5,7 @@ colors:
     foreground: '#eff0eb'
   cursor:
     text: CellBackground
-    cursor: '#ff6ac1'
+    cursor: '#7F63B7'
   selection:
     text:  '#FF55FF'
     background: '#0d0c0e'

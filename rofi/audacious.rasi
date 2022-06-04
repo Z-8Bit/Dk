@@ -14,7 +14,7 @@ configuration {
 	fg:	#dadada;
 	accent:	#2f343d;
     active:	#2f343d;
-	rad: 10px;
+	rad: 2px;
 	background-color: @bg;
 	text-color:	@fg;
 }

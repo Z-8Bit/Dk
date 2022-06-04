@@ -26,7 +26,6 @@ cp -r ~/Downloads/Dk/dunst/* ~/.config/dunst/
 cp ~/Downloads/Dk/rofi/* ~/.config/rofi/
 cp ~/Downloads/Dk/touchegg/touchegg.conf ~/.config/touchegg/
 cp ~/Downloads/Dk/neofetch/config.conf ~/.config/neofetch/
-cp ~/Downloads/Dk/misc/picom.conf ~/.config/
 cp ~/Downloads/Dk/polybar/* ~/.config/polybar/
 
 # Scripts and Miscellaneous
@@ -34,6 +33,7 @@ chmod +x ~/Downloads/Dk/scripts/*.sh
 sudo cp ~/Downloads/Dk/scripts/*.sh /usr/bin/
 sudo cp ~/Downloads/Dk/misc/30-touchpad.conf /etc/X11/xorg.conf.d
 cp ~/Downloads/Dk/misc/xprofile ~/.xprofile
+cp ~/Downloads/Dk/misc/picom.conf ~/.config/
 
 git clone https://github.com/Z-8Bit/Wallpapers ~/Pictures/Wallpapers
 RED='\033[0;31m'

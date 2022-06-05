@@ -15,3 +15,8 @@
 3. Run the script by doing **`./dk-setup.sh`**
 4. Type the sudo password whenever asked.
 5. Enjoy your new Dk setup!
+
+## Credits
+
+1. Big thanks to [Nate](https://github.com/nathanielevan) for his polybar config which I took as a base and modified.
+2. Big thanks to [Zeppelin](https://github.com/biscuitrescue) for his rofi config which I took as a base and modified.
